@@ -4,7 +4,7 @@ import subprocess
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-BOT_TOKEN = os.getenv("7655022347:AAEf-PsFzVU-5AQX-Nch-SiGGOWbR7uM7nc")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Send a Zee5 link and I'll try to fetch the video!")
